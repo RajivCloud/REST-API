@@ -1,1 +1,0 @@
-print("Kisk Ass Start")
