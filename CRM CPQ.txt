@@ -1,0 +1,32 @@
+CRM -- Customer Mgmt
+
+CPQ -- Quote mgmt
+
+
+CRM --> Oppty (Customer data) --> Create Quote ===> CPQ application (Configure the Product/model trcuk)
+
+
+
+Latest Implementation:
+
+CRM --> Oppty (customer data) --> Select Product (ERP025VC) --> Create Quote ==> CPQ Application 
+
+
+==============================================================
+
+1. Create a Transaction (template quote at CPQ -- Quote status to New Quote)
+-- https://testmhc.bigmachines.com/rest/v11/commerceDocumentsQuickstart_commerce_processQuote_process/actions/_new_transaction
+
+/rest/v13/commerceDocuments{ProcessVarName}{MainDocVarName}/actions/_new_transaction
+
+2. Update action on that transaction (sync with CRM system and it will update the Quote status to Quote pending at CPQ).
+3. Adding the product to CPQ as line item.
+
+=========
+
+
+1. Create Quote.
+2. Update the transaction == adding the product..
+
+
+
